@@ -5,6 +5,10 @@ VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Registry.UserAssist", "Registry.UserAssist\Registry.UserAssist.csproj", "{09540562-383B-4090-AB6B-AA18B0089DAD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{88C7E38F-4940-407D-966B-828D6AEEEB7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.ConsoleApp", "Test.ConsoleApp\Test.ConsoleApp.csproj", "{02A9822B-CF58-4B86-A0EE-B115CD3AB3EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{09540562-383B-4090-AB6B-AA18B0089DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09540562-383B-4090-AB6B-AA18B0089DAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09540562-383B-4090-AB6B-AA18B0089DAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02A9822B-CF58-4B86-A0EE-B115CD3AB3EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02A9822B-CF58-4B86-A0EE-B115CD3AB3EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02A9822B-CF58-4B86-A0EE-B115CD3AB3EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02A9822B-CF58-4B86-A0EE-B115CD3AB3EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{02A9822B-CF58-4B86-A0EE-B115CD3AB3EB} = {88C7E38F-4940-407D-966B-828D6AEEEB7F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {27E910AC-861C-44FB-AE1C-373BEADAC431}

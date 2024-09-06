@@ -1,6 +1,6 @@
 ﻿namespace Registry.UserAssist.Enums
 {
-    public enum Guids : int
+    public enum EnGuidsFolders : int
     {
         [StringValue("{CEBFF5CD-ACE2-4F4F-9178-9926F41749EA}")]
         W7_1,
