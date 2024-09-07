@@ -1,8 +1,15 @@
 ﻿using Newtonsoft.Json;
 using Registry.UserAssist.Helper.Win32;
-using (Rot13KnwnFldr rkf = new Rot13KnwnFldr())
+using Registry.UserAssist.Structs;
+
+OptRot13KnwnFldr _Opt = new OptRot13KnwnFldr()
 {
-    rkf.CreateFiltersRegexList(new string[] { ".exe" });
+    IsChekedValidPath = false,
+    RegexFilters = new string[] { @"\.exe" }
+};
+
+using (Rot13KnwnFldr rkf = new Rot13KnwnFldr(_Opt))
+{
     rkf.Init();
     foreach (var item in rkf.GetFolders())
     {
@@ -17,12 +24,5 @@ using (Rot13KnwnFldr rkf = new Rot13KnwnFldr())
     catch (Exception)
     { }
     #endregion
-    #region print enum values
-    //foreach (EnGuidsFolders item in Enum.GetValues(typeof(EnGuidsFolders)))
-    //{
-    //    Console.WriteLine($"{item} | {item.GetStringValue()}");
-    //}
-    #endregion
-
 };
 Console.ReadKey();
