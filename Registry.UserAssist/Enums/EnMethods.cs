@@ -24,7 +24,7 @@ namespace Registry.UserAssist.Enums
             // Get the type
             Type type = value.GetType();
 
-            return $"{value}-{value.GetStringValue()}";
+            return $"[{value}|{value.GetStringValue()}]";
         }
 
 
