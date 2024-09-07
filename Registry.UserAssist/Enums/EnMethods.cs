@@ -19,7 +19,13 @@ namespace Registry.UserAssist.Enums
             // Return the first if there was a match.
             return attribs.Length > 0 ? attribs[0].StringValue : null;
         }
+        public static string GetData(this Enum value)
+        {
+            // Get the type
+            Type type = value.GetType();
 
+            return $"{value}-{value.GetStringValue()}";
+        }
 
 
     }

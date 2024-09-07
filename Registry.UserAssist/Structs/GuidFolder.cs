@@ -6,5 +6,11 @@ namespace Registry.UserAssist.Structs
     {
         public EnGuidsFolders Guid;
         public string Path;
+        public string ValueName;
+
+        public override string ToString()
+        {
+            return $"Guid: {Guid.GetData()}\nValueName: \"{ValueName}\"\nPath: \"{Path}\"\n";
+        }
     }
 }
